@@ -8,6 +8,8 @@ export default function HomeScreen() {
   const [text, setText] = useState(''); // Estado para armazenar o texto digitado
   return (
     <View style={styles.container}>
+
+      <View style={styles.box}><Text style={styles.boxtext}>AAAAAA</Text></View>
       <Text style={styles.title}>Exemplo de Input</Text>
 
       <TextInput
@@ -22,8 +24,14 @@ export default function HomeScreen() {
         Você digitou: {text || 'Nada ainda...'}
       </Text>
     </View>
+
+    
   );
 }
+
+
+
+
 
 const styles = StyleSheet.create({
   container: {
@@ -52,5 +60,18 @@ const styles = StyleSheet.create({
   output: {
     fontSize: 18,
     color: '#333',
+  },
+  box: {
+    backgroundColor: '#EBAEB8',
+    borderRadius: 10,
+    width: 100 ,
+    height: 100,
+    margin: 100,
+  },
+  boxtext: {
+    fontSize: 24,
+    padding: 20,
+    justifyContent: 'center',
+    textAlign: 'center',
   },
 });
