@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 
+//{https://dontpad.com/devs2blu2024/componentesBasicosReact} -----------------------------------------------------------------------------------------------------------
 
 export default function HomeScreen() {
   const [text, setText] = useState(''); // Estado para armazenar o texto digitado
